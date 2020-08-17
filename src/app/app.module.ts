@@ -12,12 +12,17 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { ListApplicationComponent } from './list-application/list-application.component';
+import { ListEntityComponent } from './list-entity/list-entity.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    ListApplicationComponent,
+    ListEntityComponent
   ],
   imports: [
     BrowserModule,

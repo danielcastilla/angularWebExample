@@ -2,16 +2,16 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
-providedIn: 'root'
+    providedIn: 'root'
 })
+
 export class ApiService {
 
-private SERVER_URL = "http://localhost:3000";
+    private SERVER_URL = "http://localhost:3000/applications";
+    constructor(private httpClient: HttpClient) { }
 
-constructor(private httpClient: HttpClient) { }
-
-	public get(){
-		return this.httpClient.get(this.SERVER_URL);
-	}
+        public get(){
+            return this.httpClient.get(this.SERVER_URL);
+        }
 
 }
